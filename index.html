@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Substantiate Pro | Logic-Driven Goal Tracking</title>
+    <style>
+        /* 1. COLOR VARIABLES */
+        :root { 
+            --primary: #1a1a1a; 
+            --accent: #0984e3; 
+            --success: #00b894; 
+            --bg-light: #f5f6fa;
+            --text-main: #2f3640;
+            --text-muted: #7f8c8d;
+            --white: #ffffff;
+        }
+
+        /* 2. GENERAL STYLES */
+        body { 
+            font-family: 'Inter', system-ui, -apple-system, sans-serif; 
+            line-height: 1.6; 
+            color: var(--text-main); 
+            margin: 0; 
+            background: var(--white); 
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* 3. HERO SECTION (Uses your 1000033780.png) */
+        .hero { 
+            min-height: 60vh; 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('1000033780.png'); 
+            background-size: cover; 
+            background-position: center; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: var(--white); 
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .hero-content { max-width: 800px; }
+        h1 { font-size: clamp(2.5rem, 8vw, 4rem); margin: 0; letter-spacing: -1px; line-height: 1.1; }
+        .hero p { font-size: clamp(1.1rem, 4vw, 1.5rem); font-weight: 300; opacity: 0.9; margin-top: 15px; }
+        
+        /* 4. FEATURES SECTION */
+        .features { 
+            padding: 60px 10%; 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 40px; 
+        }
+        .feature-card h3 { 
+            color: var(--accent); 
+            font-size: 1.1rem; 
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .feature-card p { font-size: 0.95rem; color: var(--text-muted); }
+
+        /* 5. THE HUMBLE CTA AREA */
+        .cta-area { 
+            background: var(--bg-light); 
+            padding: 60px 10%; 
+            text-align: center; 
+            border-top: 1px solid #eee; 
+        }
+        .humble-note { 
+            font-style: italic; 
+            max-width: 650px; 
+            margin: 0 auto 40px; 
+            color: var(--text-muted); 
+            line-height: 1.8; 
+            font-size: 1.05rem;
+        }
+
+        /* 6. THE FUNCTIONAL BUTTON */
+        .lemonsqueezy-button { 
+            display: inline-block;
+            background: var(--success); 
+            color: var(--white); 
+            padding: 18px 40px; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 14px 0 rgba(0, 184, 148, 0.3);
+        }
+        .lemonsqueezy-button:hover { 
+            background: #00a383; 
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 184, 148, 0.4);
+        }
+
+        /* 7. MOBILE RESPONSIVENESS TWEAK */
+        @media (max-width: 600px) {
+            .features { padding: 40px 5%; gap: 30px; }
+            .hero { min-height: 50vh; }
+            .cta-area { padding: 40px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header style="background: var(--primary); color: white; padding: 15px 10%; text-align: left;">
+        <span style="font-weight: bold; letter-spacing: 1px;">SUBSTANTIATE PRO</span>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Substantiate Pro</h1>
+            <p>Refining Productivity Through Professional Logic.</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Professional Precision</h3>
+            <p>Developed by an industry veteran with 18 years of experience in structured diagnostic workflows. Built for objective monitoring.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Local-First Architecture</h3>
+            <p>A no-nonsense, single-file HTML application. Launches instantly on your device for maximum privacy and zero friction.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Systematic Output</h3>
+            <p>Move beyond simple checklists. Visualize your goals like a logical roadmap, ensuring every blueprint becomes a brick.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Data Sovereignty</h3>
+            <p>Your strategic plans are yours alone. Local browser storage ensures your data stays offline with one-click exports.</p>
+        </div>
+    </section>
+
+    <section class="cta-area">
+        <p class="humble-note">
+            "Substantiate Pro is a distillation of 18 years spent refining workflows in a precise, diagnostic field. It is a utility-first tool built for others who value logic and privacy in their productivity."
+        </p>
+        
+        <a href="YOUR_LEMON_SQUEEZY_URL" class="lemonsqueezy-button">Get Substantiate Pro</a>
+    </section>
+
+    <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
+</body>
+</html>
